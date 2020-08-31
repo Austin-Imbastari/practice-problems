@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    function mean (numbers){
+      var total = 0, i;
+      for (i = 0; i < numbers.length; i+= 1){
+        total += numbers[i];
+
+      }
+      return total / numbers.length;
+    }
+    console.log(mean([1, 2, 3, 4, 5]));
+    console.log(mean([7, 3, 1, 5, 3, 2]));
+    console.log(mean([9, 3, 6]));
+
+  </script>
+</body>
+</html>
