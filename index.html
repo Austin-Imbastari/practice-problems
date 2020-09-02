@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+  <script>
+
+    function createRepeatingLetters(word,number) {
+      var result = '';
+      for(var i = 0; i < word.length; i++){
+
+        for(var index = 0; index < number; index++){
+          result = result + word[i];
+        }
+      }
+      return result
+    }
+    console.log(createRepeatingLetters('austin',3))
+    console.log(createRepeatingLetters('javier', 3))
+    console.log(createRepeatingLetters('justin', 3))
+
+  </script>
+</body>
+</html>
