@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+  <script>
+
+
+
+
+
+    function isWithinRange(number,rangeObject) {
+      var min = rangeObject.min;
+      var max = rangeObject.max;
+
+      if(number < max && number > min) {
+        return true
+      } else return false
+    };
+
+    var javier = isWithinRange(5,{min: 1, max: 10});
+    var javier2 = isWithinRange(10, { min: 1, max: 10 });
+    console.log(javier);
+    console.log(javier2);
+  </script>
+</body>
+</html>

@@ -6,11 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-
-
-
   <script>
-
 
     function isTheAverageWhole(numberValue) {
       result = 0;
@@ -18,7 +14,6 @@
         result = result += numberValue[i];
       }
       result = (result / numberValue.length);
-
       if(Number.isInteger(result)){
         return "true"
       } else {
@@ -27,9 +22,11 @@
       return result
     }
 
-      console.log(isTheAverageWhole([1,3,4,4]));
-      console.log(isTheAverageWhole([3,4]));
-      console.log(isTheAverageWhole([5, 5, 5]));
+    var wholeNum = (isTheAverageWhole([1,3,4,4]));
+    console.log('Is this a whole number?:', wholeNum);
+    console.log(isTheAverageWhole([3,4]));
+    console.log(isTheAverageWhole([5, 5, 5]));
+
   </script>
 </body>
 </html>
