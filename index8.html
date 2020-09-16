@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function zipCodeValidator(zipToValidate) {
+      var result = zipToValidate.indexOf(' ');
+      var result2 = zipToValidate.match(/^[0-9]+$/)
+      var result3 = zipToValidate.length
+      if(result !== -1){
+        return false;
+      }
+      if(result2 === null){
+        return false;
+      }
+      if(result3 > 5){
+        return false;
+      }
+
+
+      return true;
+    }
+
+    console.log(zipCodeValidator("21594"));
+    console.log(zipCodeValidator("3Eds32"));
+    console.log(zipCodeValidator("9123465"));
+
+  </script>
+</body>
+</html>
