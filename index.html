@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// What I Need To Do....
+
+// 1. define a function named "accountNumberProtector"
+// 2. takes a string.
+// 3. string contains 16 digit number
+// 4. parameter = cardNumberString
+// 5. return with prefix **
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// What I Elements I Need ....
+
+// 1. substring()
+// 2. variable
+// 3. .concat to attach character
+// 4.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Why I Need These Elements....
+
+//1. substring extracts ccharacter from a string.
+//2. var to store values
+//3.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function accountNumberProtector(cardNumberString) {
+
+      var str = cardNumberString.substring(12);
+      var prefix = '**'
+      var concated = prefix.concat(str)
+      return concated
+
+    }
+
+    console.log(accountNumberProtector("5543223485638832"));
+    console.log(accountNumberProtector("8934235477210943"));
+    console.log(accountNumberProtector("7513635499320192"));
+
+  </script>
+</body>
+</html>
