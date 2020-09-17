@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// What I Need To Do....
+
+// 1. define a function that takes a STRING.
+// 2. String represents a date .. ex ("MM/DD/YY")
+// 3. returns a STRING. = day of the week of the arguement date.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// What I Elements I Need ....
+
+// 1. date object. date()
+// 2. storage
+// 3. pass in a stringDate
+// 4.
+// 5.
+// 6.
+// 7.
+// 8.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Why I Need These Elements....
+
+//1.
+//2.
+//3.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function dayFinder(stringDate) {
+      var weekday = new Array(7);
+      weekday[0] = "Sunday";
+      weekday[1] = "Monday";
+      weekday[2] = "Tuesday";
+      weekday[3] = "Wednesday";
+      weekday[4] = "Thursday";
+      weekday[5] = "Friday";
+      weekday[6] = "Saturday";
+
+      var dayOfWeek = new Date(stringDate).getDay();
+      var dayOfWeekString = weekday[dayOfWeek];
+
+      return dayOfWeekString;
+    }
+
+    console.log(dayFinder("05/22/1946"));
+    console.log(dayFinder("01/20/2001"));
+    console.log(dayFinder("03/15/1988"));
+  </script>
+</body>
+</html>
