@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+// What I Need To Do....
+
+// 1. define a function named payscaleAnalyzer (check)
+// 2. take an Array of Hourly Wages
+// 3. Returns the Numeric Difference = (subtraction) between the HIGHEST & LOWEST wages
+// 4. arguement (payList)
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// What I Elements I Need ....
+
+// 1. function named payscaleAnalyzer
+// 2. arguement of the function (payList)
+// 3. storage for the result. (+= operator)
+// 4. return statement
+// 5. calculate the difference b/w highest/lowest value in the array.
+// 6. Spread operator (...) = creates parameter list the array.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Why I Need These Elements....
+
+//1. paylist argument - is used to define the function definition
+//   and real values passed to the function.
+//2. I need to store the calculations somewhere. (var result = 0;)
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function payscaleAnalyzer(payList) {
+      var result = 0;
+
+        var max = Math.max(...payList);
+        var min = Math.min(...payList);
+
+      return max - min;
+    }
+
+    var javierNumbers ='This is the results from Javier: ' +  payscaleAnalyzer([28, 34, 21, 39])
+    console.log(javierNumbers);
+
+    var javierNumbers = 'This is the results from Javier: ' + payscaleAnalyzer([18, 22, 19, 26])
+    console.log(javierNumbers);
+
+    var javierNumbers = 'This is the results from Javier: ' + payscaleAnalyzer([41.50, 27.25, 32.50, 29.60])
+    console.log(javierNumbers);
+
+  </script>
+</body>
+</html>
