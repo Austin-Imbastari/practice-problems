@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // What I Need To Do....
+
+// 1. Define a function with the name "spellChecker"
+// 2. two arguements (  ,  )
+// 3. return two arrays
+// 4. one array = correct
+// 5. another array = incorrect
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// What Elements I Need ....
+
+// 1. object
+// 2. array
+// 3. parameter
+// 4. string
+// 5. loop
+// 6. i++
+// 7. object
+// 8.
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Why I Need These Elements....
+
+//1. loop = loop through the array?
+//2. incremenets by 1
+//3. pushmethod because it is an object
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function spellChecker(userWords,correctWords) {
+      var spelling = {
+        correct: [],
+        incorrect: [],
+
+
+      }
+      for(var i = 0; i < userWords.length; i++) {
+        var userWord = userWords[i];
+        var correctWord = correctWords[i];
+        if(userWord === correctWord){
+          spelling.correct.push(correctWord);
+        } else {
+          spelling.incorrect.push(userWord);
+        }
+      }
+      return spelling;
+    }
+
+  console.log(spellChecker(["boy", "duct", "ice cream", "sendwich"], ["boy", "duck", "ice cream", "sandwich"]));
+  console.log(spellChecker(["jam", "breat", "sound"], ["jam", "bread", "sound"]));
+  console.log(spellChecker(["java", "CDS", "HTMO"], ["java", "CSS", "HTML"]));
+  </script>
+</body>
+</html>
