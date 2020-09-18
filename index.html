@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // What I Need To Do....
+
+    // 1. create a function named dayFinder
+    // 2. parameter will be named stringDate
+    // 3. create a variable to store the data
+    // 4. make a contructor that holds all the weekdays
+    // 5. create a variable to store the day of the week with the getDay method
+    // 6. create a date object that will get the day of the week
+    // 7. (turns the day of the week (0–6) for the specified date according to local time.)
+
+
+    function dayFinder(stringDate) {
+      var weekday = new Array(7);
+      weekday[0] = "Sunday";
+      weekday[1] = "Monday";
+      weekday[2] = "Tuesday";
+      weekday[3] = "Wednesday";
+      weekday[4] = "Thursday";
+      weekday[5] = "Friday";
+      weekday[6] = "Saturday";
+
+      var dayOfWeek = new Date(stringDate).getDay();
+      var dayOfWeekString = weekday[dayOfWeek];
+
+      return dayOfWeekString;
+    }
+
+    console.log(dayFinder("05/22/1946"));
+    console.log(dayFinder("01/20/2001"));
+    console.log(dayFinder("03/15/1988"));
+  </script>
+</body>
+
+</html>
