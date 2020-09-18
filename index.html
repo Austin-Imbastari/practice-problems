@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // What I Need To Do....
+    //1. define a function  named convertMinutesToSeconds
+    //2. recieves a string receives a string representing an amount of time in minutes,
+    //   and returns a numeric value which represents the same length of time in seconds.
+    //3. parameter will called timeToConvert
+    //4. grab the invidual character by its index
+    //5. convert minutes to second using a formula
+    //6. return the calculations
+
+    function convertMinutesToSeconds(timeToConvert){
+
+      var seconds = timeToConvert.substring(3)
+      var minutes = timeToConvert.substring(0,2)
+      var minutesCalc = (minutes * 60)
+      return minutesCalc + seconds * 1
+    }
+
+    var time = convertMinutesToSeconds("15:34");
+    var time2 = convertMinutesToSeconds("02:45");
+    var time3 = convertMinutesToSeconds("08:21");
+    console.log('This is how long until I fall asleep:', time);
+    console.log('This is how long until I fall asleep:', time3);
+    console.log('This is how long until I fall asleep:', time3);
+
+
+  </script>
+</body>
+</html>
