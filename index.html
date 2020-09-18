@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // What I Need To Do....
+
+    // 1. Create a function with the name payscaleAnalyzer... in the parenthesis there will contain a word "payList"
+    //    There will be a storage variable that will containe the "min" and the 'max' values.
+
+    // 2. A loop that will go through the array of numbers.
+    //    the loop will start at index 1 therefore the loop will start with the number 34 in the Example
+    //    i will be less than the entire array length. i will go through the array by 1
+
+    // 3. if statement that says "if playlist at i(34) is less than min(28)" assign payList[0] to min which is the variable.
+    //    vice versa with the bottom if statment..
+
+    // 4. then return the difference b/w max and min (subtraction)
+
+
+    function payscaleAnalyzer(payList) {
+      var min = payList[0];
+      var max = payList[0];
+
+      for (var i = 1; i < payList.length; i++) {
+        if (payList[i] < min) {
+          min = payList[i]
+        }
+        if (payList[i] > max) {
+          max = payList[i]
+        }
+      }
+      return max - min;
+    }
+
+    var javierNumbers = 'This is the results from Javier: ' + payscaleAnalyzer([28, 34, 21, 39])
+    console.log(javierNumbers);
+
+    var javierNumbers = 'This is the results from Javier: ' + payscaleAnalyzer([18, 22, 19, 26])
+    console.log(javierNumbers);
+
+    var javierNumbers = 'This is the results from Javier: ' + payscaleAnalyzer([41.50, 27.25, 32.50, 29.60])
+    console.log(javierNumbers);
+
+  </script>
+</body>
+
+</html>
