@@ -7,7 +7,6 @@
 </head>
 <body>
   <script>
-
     // What I Need To Do....
 
     // 1. define a function  name findingNemo
@@ -39,7 +38,24 @@
 
     var nemoMan4 = findingNemo('ahah ahahha ahhah ahahha ahahh where is this dude nem nem Nemo')
     console.log('Nemo is number:', nemoMan4)
+    function isTheAverageWhole(numberValue) {
+      result = 0;
+      for(var i = 0; i < numberValue.length; i++) {
+        result = result += numberValue[i];
+      }
+      result = (result / numberValue.length);
+      if(Number.isInteger(result)){
+        return "true"
+      } else {
+        return 'false'
+      }
+      return result
+    }
 
+    var wholeNum = (isTheAverageWhole([1,3,4,4]));
+    console.log('Is this a whole number?:', wholeNum);
+    console.log(isTheAverageWhole([3,4]));
+    console.log(isTheAverageWhole([5, 5, 5]));
   </script>
 </body>
 </html>

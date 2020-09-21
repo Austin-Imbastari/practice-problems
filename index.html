@@ -32,6 +32,20 @@
     console.log('This is how long until I fall asleep:', time3);
 
 
+
+
+  <script>
+    function mean (numbers){
+      var total = 0, i;
+      for (i = 0; i < numbers.length; i+= 1){
+        total += numbers[i];
+
+      }
+      return total / numbers.length;
+    }
+    console.log(mean([1, 2, 3, 4, 5]));
+    console.log(mean([7, 3, 1, 5, 3, 2]));
+    console.log(mean([9, 3, 6]));
   </script>
 </body>
 </html>
