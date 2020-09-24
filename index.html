@@ -14,6 +14,49 @@
 
 
 
+
   <script src="main.js"></script>
+
+  <script>
+    // What I Need To Do....
+    //1. define a function  named convertMinutesToSeconds
+    //2. recieves a string receives a string representing an amount of time in minutes,
+    //   and returns a numeric value which represents the same length of time in seconds.
+    //3. parameter will called timeToConvert
+    //4. grab the invidual character by its index
+    //5. convert minutes to second using a formula
+    //6. return the calculations
+
+    function convertMinutesToSeconds(timeToConvert){
+
+      var seconds = timeToConvert.substring(3)
+      var minutes = timeToConvert.substring(0,2)
+      var minutesCalc = (minutes * 60)
+      return minutesCalc + seconds * 1
+    }
+
+    var time = convertMinutesToSeconds("15:34");
+    var time2 = convertMinutesToSeconds("02:45");
+    var time3 = convertMinutesToSeconds("08:21");
+    console.log('This is how long until I fall asleep:', time);
+    console.log('This is how long until I fall asleep:', time3);
+    console.log('This is how long until I fall asleep:', time3);
+
+
+
+
+  <script>
+    function mean (numbers){
+      var total = 0, i;
+      for (i = 0; i < numbers.length; i+= 1){
+        total += numbers[i];
+
+      }
+      return total / numbers.length;
+    }
+    console.log(mean([1, 2, 3, 4, 5]));
+    console.log(mean([7, 3, 1, 5, 3, 2]));
+    console.log(mean([9, 3, 6]));
+  </script>
 </body>
 </html>

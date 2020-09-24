@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // What I Need To Do....
+
+    // 1. define a function  name findingNemo
+    // 2. takes a string of multiple words and returns the position.
+    // 3. store the variable
+    // 4. loop through the words and find out where the word nemo is
+    // 5. if statements = if it === "Nemo" then return the index
+    // 6  want to return the value of the index where the word Nemo is
+
+
+    function findingNemo(str) {
+      var words = str.split(' ')
+      for(var i = 0; i < words.length; i++){
+        if(words[i] === 'Nemo'){
+          return i + 1;
+        }
+      }
+    }
+
+
+    var nemoMan = findingNemo("I am Nemo");
+    console.log('Nemo is number:' , nemoMan);
+
+    var nemoMan2 = findingNemo("Where is Nemo my son?");
+    console.log('Nemo is number:' , nemoMan2)
+
+    var nemoMan3 = findingNemo("Nemo is my name");
+    console.log('Nemo is number:' , nemoMan3);
+
+    var nemoMan4 = findingNemo('ahah ahahha ahhah ahahha ahahh where is this dude nem nem Nemo')
+    console.log('Nemo is number:', nemoMan4)
+    function isTheAverageWhole(numberValue) {
+      result = 0;
+      for(var i = 0; i < numberValue.length; i++) {
+        result = result += numberValue[i];
+      }
+      result = (result / numberValue.length);
+      if(Number.isInteger(result)){
+        return "true"
+      } else {
+        return 'false'
+      }
+      return result
+    }
+
+    var wholeNum = (isTheAverageWhole([1,3,4,4]));
+    console.log('Is this a whole number?:', wholeNum);
+    console.log(isTheAverageWhole([3,4]));
+    console.log(isTheAverageWhole([5, 5, 5]));
+  </script>
+</body>
+</html>
