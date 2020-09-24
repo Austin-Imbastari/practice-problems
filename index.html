@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// What I Need To Do....
+
+// 1.  define a function named volumeCalculator which takes an array
+// 2.  of three other arrays
+// 3.  the three arrays represent the width height length
+// 4.  returns a numeric value
+// 5.  i know i need a for loop
+// 6.  two for loops/
+// 7.  i need to looop over the first array then use another index to loop through the other array
+// 8.  then calulate volume with the 2nd array
+// 9.  after i += the volume to the result
+
+
+    function volumeCalculator(boxesArray) {
+      var result = 0;
+
+      for(var i = 0; i < boxesArray.length; i++) {
+        var arrayBox = boxesArray[i];
+        var volume = 1;
+
+        for(var j = 0; j < arrayBox.length; j++) {
+          var jLoop = arrayBox[j];
+          volume = volume * jLoop;
+        }
+        result += volume
+      }
+      return result
+    }
+
+    console.log(volumeCalculator([[3, 3, 3], [4, 4, 4], [5, 5, 5]]));
+    console.log(volumeCalculator([[5, 1, 4], [8, 5, 4], [3, 1, 7]]));
+    console.log(volumeCalculator([[5, 4, 2], [12, 15, 21], [7, 7, 7]]));
+
+  </script>
+</body>
+</html>
