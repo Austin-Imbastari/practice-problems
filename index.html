@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // What I Need To Do....
+
+// 1. define a function named fogClearer. Takes in a string as an argument and returns a string.
+// 2. i will need some type of storage for the string
+// 3. i will have to figure out how iterate over each character in the string.
+// 4. i can use falsy
+// 5. if string doesnt have these characters then add the ones that dont in result
+// 6. if string has "I like nice trees" then return "its a clear day"
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function fogClearer(stringToClear) {
+      var results = '';
+      for(var i = 0; i < stringToClear.length; i++) {
+          if(stringToClear[i] !== 'f' && stringToClear[i] !== 'o' && stringToClear[i] !== 'g') {
+            results += stringToClear[i]
+          }
+          if(stringToClear === results){
+            return "It's a clear day!"
+          }
+      }
+      return results
+    }
+
+
+    console.log(fogClearer("fffdarkooooooggggggg"));
+    console.log(fogClearer("I like nice trees"));
+    console.log(fogClearer("foogooooffffhuhooofff"));
+  </script>
+</body>
+</html>
