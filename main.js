@@ -1,3 +1,4 @@
+
 /*
 * define a function named phAnalyzer
 ! when given a specific # that is between the pH chart it will return a string
@@ -23,3 +24,4 @@ console.log(phAnalyzer(1))
 console.log(phAnalyzer(5))
 console.log(phAnalyzer(9))
 console.log(phAnalyzer(15))
+
