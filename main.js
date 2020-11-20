@@ -1,27 +1,27 @@
-// What I Need To Do....
 
-// 1. define a function name digitFilter .
-// 2. the function recieves an array [] of a number
-// 3. the array will be used to filter the numbere value in the arguement
-// 4. return an array
-// 5. i know ill need sometype of storage. empty array
-// 6. will neeed a loop. to looop through the array.
-// 7. if else statement to determine what to push.
-// 8. i know i will have to push the values into a new array .push?
-// 9. if the numbersarray === number filter push it into results.
+/*
+* define a function named phAnalyzer
+! when given a specific # that is between the pH chart it will return a string
+* 0-6 = ACID, 7-10 = Neutral, 11-14 = alkaline
+* if (0 >= 6 && 6 <= 0) acid
+*/
 
-  function digitFilter(numbersArray, numberFilter) {
-    var result = []
-    for(var i = 0; i < numbersArray.length; i++){
-      var numberString = numbersArray[i].toString()
-      if(numberString.length === numberFilter) {
-        result.push(numberString);
-      }
-    }
-
-    return result
+function phAnalyzer (pH) {
+  if (pH < 0 || pH > 14) {
+    return 'invalid pH value'
   }
 
-  console.log(digitFilter([23, 312, 24, 243, 43], 3));
-  console.log(digitFilter([23, 315, 231, 54, 72], 2));
-  console.log(digitFilter([1, 4323, 23, 4565, 3, 4], 1));
+  if (pH >= 0 && pH <= 4) {
+    return 'acidic';
+  } else if (pH > 4 && pH <= 8 ) {
+    return 'neutral'
+  } else if (pH > 8 && pH <=14) {
+    return 'alkaline'
+  }
+}
+
+console.log(phAnalyzer(1))
+console.log(phAnalyzer(5))
+console.log(phAnalyzer(9))
+console.log(phAnalyzer(15))
+
