@@ -1,19 +1,19 @@
 /*
-  ! define a function named sumArray has a parameter names sum
-  ! loop through the array
-  ! added each index [i]
-  * need a result for storage.
-  * result +=
+* define a function sumArray
+! output = [10,10] = 20;
+* parameter = arr
+* assign result = 0 because we  need to add
+* need to +=
+* return result
+* need to loop over the array.
 */
 
-const sumArray = (sum) => {
+let sumArray = (arr) => {
   let result = 0
-  for (var i = 0; i < sum.length; i++) {
-    result += sum[i]
+  for (var i = 0; i < arr.length; i++) {
+    result += arr[i]
   }
   return result
 }
 
 console.log(sumArray([10,5,3,7,2]))
-console.log(sumArray([1,2,3,4,5]))
-console.log(sumArray([5,3,7,4]))
